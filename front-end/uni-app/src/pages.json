@@ -1,0 +1,136 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index"
+		},
+		{
+			"path": "pages/user/index"
+		},
+		{
+			"path": "pages/shoppingCart/shoppingCart"
+		},
+		{
+			"path": "pages/user/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "slide-in-bottom"
+				}
+			}
+		},
+        {
+            "path" : "pages/goods/goodsDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商品详情",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+            "path" : "pages/user/userInfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+            "path" : "pages/order/pay",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+            "path" : "pages/order/paySuccess",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+		    "path" : "pages/order/orderList",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/user/register",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "雨月云超市",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"usingComponents": {
+			"van-button": "/wxcomponents/vant/dist/button/index",
+			"van-icon": "/wxcomponents/vant/dist/icon/index",
+			"van-search": "/wxcomponents/vant/dist/search/index",
+			"van-divider": "/wxcomponents/vant/dist/divider/index",
+			"van-dropdown-menu": "/wxcomponents/vant/dist/dropdown-menu/index",
+			"van-dropdown-item": "/wxcomponents/vant/dist/dropdown-item/index",
+			"van-popup": "/wxcomponents/vant/dist/popup/index",
+			"van-cell": "/wxcomponents/vant/dist/cell/index",
+			"van-cell-group": "/wxcomponents/vant/dist/cell-group/index",
+			"van-picker": "/wxcomponents/vant/dist/picker/index",
+			"van-grid": "/wxcomponents/vant/dist/grid/index",
+			"van-grid-item": "/wxcomponents/vant/dist/grid-item/index",
+			"van-row": "/wxcomponents/vant/dist/row/index",
+			"van-col": "/wxcomponents/vant/dist/col/index",
+			"van-card": "/wxcomponents/vant/dist/card/index",
+			"van-tree-select": "/wxcomponents/vant/dist/tree-select/index",
+			"van-empty": "/wxcomponents/vant/dist/empty/index",
+			"van-toast": "/wxcomponents/vant/dist/toast/index",
+			"van-image": "/wxcomponents/vant/dist/image/index",
+			"van-field": "/wxcomponents/vant/dist/field/index",	
+			"van-radio": "/wxcomponents/vant/dist/radio/index",
+			"van-radio-group": "/wxcomponents/vant/dist/radio-group/index",
+			"van-dialog": "/wxcomponents/vant/dist/dialog/index",
+			"van-tab": "/wxcomponents/vant/dist/tab/index",
+			"van-tabs": "/wxcomponents/vant/dist/tabs/index"
+			
+		}
+	},
+	"tabBar": {
+		"selectedColor":"#007AFF",
+		"borderStyle":"black",
+		"list": [
+			{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/home.png",
+				"selectedIconPath": "static/home-active.png"
+			},
+			{
+				"text": "购物车",
+				"pagePath": "pages/shoppingCart/shoppingCart",
+				"iconPath": "static/cart.png",
+				"selectedIconPath": "static/cart-active.png"
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/user/index",
+				"iconPath": "static/user.png",
+				"selectedIconPath": "static/user-active.png"
+			}
+		]
+	}
+}
